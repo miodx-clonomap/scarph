@@ -1,11 +1,11 @@
 name          := "scarph"
-organization  := "clonomap"
+organization  := "com.miodx.common"
 description   := "Scala graph API"
 version       := "0.5.0"
 
 libraryDependencies ++= Seq(
-  "clonomap" %% "cosas"     % "0.10.1",
-  "org.scalatest" %% "scalatest" % "3.0.1" % Test
+  "com.miodx.common" %% "cosas"     % "0.10.1",
+  "org.scalatest"    %% "scalatest" % "3.0.1" % Test
 )
 
 // shows time for each test:

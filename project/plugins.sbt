@@ -5,4 +5,4 @@
 //  "repo.jenkins-ci.org" at "https://repo.jenkins-ci.org/public"
 //)
 
-addSbtPlugin("clonomap" % "nice-sbt-settings" % "0.10.1")
+addSbtPlugin("com.miodx.sbt.plugins" % "nice-sbt-settings" % "0.10.1")
