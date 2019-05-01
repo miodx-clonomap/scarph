@@ -14,7 +14,7 @@ case class AddVertexSyntax[G](u: unit := G) extends AnyVal {
   def removeV[V <: AnyVertex, RV](v: V := RV)(implicit
     adder: CanAddVertices[G, V, RV]
   )
-  : unit := G =
+  : TensorUnit.type := G =
     unit := adder.removeVertex(u.value)(v)
 
   def removeE[E <: AnyEdge, RE, RS, RT](e: E := RE)(implicit

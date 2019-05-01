@@ -125,7 +125,7 @@ case class undistribute[U <: AnyGraphObject, A <: AnyGraphObject, B <: AnyGraphO
 // I ⊗ X → X
 case class leftUnit[X <: AnyGraphObject](x: X) extends AnyNaturalIsomorphism {
 
-  type     In = unit ⊗ X
+  type     In = TensorUnit.type ⊗ X
   lazy val in: In = unit ⊗ x
 
   type     Out = X
@@ -140,7 +140,7 @@ case class leftUnit[X <: AnyGraphObject](x: X) extends AnyNaturalIsomorphism {
 // X → I ⊗ X
 case class leftCounit[X <: AnyGraphObject](x: X) extends AnyNaturalIsomorphism {
 
-  type     Out = unit ⊗ X
+  type     Out = TensorUnit.type ⊗ X
   lazy val out: Out = unit ⊗ x
 
   type     In = X
@@ -188,7 +188,7 @@ case class rightCounit[X <: AnyGraphObject](x: X) extends AnyNaturalIsomorphism 
 // 0 ⊕ X → X
 case class leftZero[X <: AnyGraphObject](x: X) extends AnyNaturalIsomorphism {
 
-  type     In = zero ⊕ X
+  type     In = BiproductZero.type ⊕ X
   lazy val in: In = zero ⊕ x
 
   type     Out = X
@@ -203,7 +203,7 @@ case class leftZero[X <: AnyGraphObject](x: X) extends AnyNaturalIsomorphism {
 // X → 0 ⊕ X
 case class leftCozero[X <: AnyGraphObject](x: X) extends AnyNaturalIsomorphism {
 
-  type     Out = zero ⊕ X
+  type     Out = BiproductZero.type ⊕ X
   lazy val out: Out = zero ⊕ x
 
   type     In = X
