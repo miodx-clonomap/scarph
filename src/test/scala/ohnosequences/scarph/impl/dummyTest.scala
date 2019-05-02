@@ -5,7 +5,7 @@ import asserts._, twitter._, dummy._, dummy.syntax._
 
 class DummyTests extends org.scalatest.FunSuite {
 
-  val I = unit := DummyUnit
+  val I = TensorUnit := DummyUnit
   val du = user := DummyVertex
   val dt = tweet := DummyVertex
   val dp = posted := DummyEdge

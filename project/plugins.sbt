@@ -1,6 +1,8 @@
-resolvers ++= Seq(
-  "Era7 maven releases" at "https://s3-eu-west-1.amazonaws.com/releases.era7.com",
-  "repo.jenkins-ci.org" at "https://repo.jenkins-ci.org/public"
-)
+//val ivyLocal = Resolver.file("local", file(Path.userHome.absolutePath + "/.ivy2/local"))(Resolver.ivyStylePatterns)
+//externalResolvers := Seq(ivyLocal)
 
-addSbtPlugin("ohnosequences" % "nice-sbt-settings" % "0.8.0-RC5")
+//resolvers ++= Seq(
+//  "repo.jenkins-ci.org" at "https://repo.jenkins-ci.org/public"
+//)
+
+addSbtPlugin("com.miodx.sbt.plugins" % "nice-sbt-settings" % "0.10.1")
