@@ -2,10 +2,11 @@ name          := "scarph"
 organization  := "com.miodx.common"
 description   := "Scala graph API"
 version       := "0.5.0"
+scalaVersion  := "2.11.11"
 
 libraryDependencies ++= Seq(
   "com.miodx.common" %% "cosas"     % "0.10.1",
-  "org.scalatest"    %% "scalatest" % "3.0.1" % Test
+  "org.scalatest"    %% "scalatest" % "3.0.5" % Test
 )
 
 // shows time for each test:
